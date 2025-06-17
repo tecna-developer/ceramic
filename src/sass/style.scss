@@ -1,1 +1,11 @@
+@use "/src/sass/libs/modern-normalize.min.css";
 @use "/src/sass/base/variables.scss";
+@use "/src/sass/base/mixin.scss";
+
+@use "/src/sass/libs/icomoon.css";
+
+
+@use "/src/sass/blocks/hero.scss";
+@use "/src/sass/ui/header.scss";
+@use "/src/sass/ui/burger.scss";
+

@@ -1,0 +1,20 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.burger {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    span {
+        width: 20px;
+        height: 1px;
+        background-color: $dark;   
+
+    } 
+}
+
+@media screen and (min-width: 768px) {
+    .burger {
+        visibility: hidden;
+    }
+    
+}
