@@ -27,9 +27,15 @@
   width: 100px;
   height: 100px;
 }
-
+.icon-shopping-bag ::before {
+    color: $dark;
+    width: 20px;
+    height: 20px;	
+}
 .icon-search-outline::before {
   color: $dark;
+  width: 20px;
+  height: 20px;
 }
 
 .nav {

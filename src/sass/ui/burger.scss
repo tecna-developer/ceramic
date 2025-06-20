@@ -1,20 +1,83 @@
 @use "/src/sass/base/variables.scss" as *;
 
 .burger {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    span {
-        width: 20px;
-        height: 1px;
-        background-color: $dark;   
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  cursor: pointer;
+  span {
+    width: 20px;
+    height: 1px;
+    background-color: $dark;
+  }
 
-    } 
+  &__menu {
+    position: absolute;
+    top: 0;
+    left: -100dvw;
+    width: 100dvw;
+    height: 100vh;
+    background-color: $light;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+    &-active {
+      transform: translateX(100dvw);
+    }
+    &-nav {
+      ul {
+        padding-inline-start: 24px;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+        a {
+          text-decoration: none;
+          color: $dark;
+          font-size: 20px;
+          text-transform: uppercase;
+          font-weight: 400;
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+  &__close {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-block-end: 80px;
+    margin-block-start: 50px;
+
+    span {
+      position: absolute;
+      top: 50%;
+      width: 19.8px;
+      height: 1px;
+      background-color: $dark;
+      border-radius: 1px;
+      transition: all 0.3s;
+    }
+
+    span:first-child {
+      transform: translateY(-50%) rotate(45deg);
+    }
+
+    span:last-child {
+      transform: translateY(-50%) rotate(-45deg);
+    }
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .burger {
-        visibility: hidden;
+  .burger {
+    visibility: hidden;
+    &__menu {
+      display: none;
     }
-    
+  }
 }
