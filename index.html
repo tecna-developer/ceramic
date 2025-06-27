@@ -2,28 +2,27 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description"
-        content="Ceramic soul is a project that explores the intersection of ceramics and digital art, creating unique pieces that blend traditional craftsmanship with modern technology.">
-    <meta name="keywords" content="ceramics, digital art, ceramic soul, modern technology, craftsmanship">
-    <meta name="author" content="Anna Tolstoukhova @tecna_developer">
+        content="Ceramic soul is a project that explores the intersection of ceramics and digital art, creating unique pieces that blend traditional craftsmanship with modern technology." />
+    <meta name="keywords" content="ceramics, digital art, ceramic soul, modern technology, craftsmanship" />
+    <meta name="author" content="Anna Tolstoukhova @tecna_developer" />
     <title>Ceramic soul</title>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
 </head>
 
 <body>
     <section class="hero">
+        <img id="potter" src="/src/img/potter.jpg" alt="potter" />
         <div class="container">
             <div class="burger__menu">
-                <button class="burger__close">
-                    <span></span><span></span>
-                </button>
+                <button class="burger__close"><span></span><span></span></button>
                 <nav class="burger__menu-nav">
                     <ul>
                         <li><a href="" class="burger__link">catalog</a></li>
@@ -33,13 +32,10 @@
                 </nav>
             </div>
             <header class="header">
-                <div class="burger">
-                    <span></span><span></span><span></span>
-                </div>
+                <div class="burger"><span></span><span></span><span></span></div>
                 <div class="header__center">
                     <div class="logo">
-                        <img src="/src/logo/logo.png" alt="">
-
+                        <img src="/src/logo/logo.png" alt="" />
                     </div>
                     <nav class="nav">
                         <ul>
@@ -52,28 +48,44 @@
 
                 <div class="header__right">
                     <button class="icon-search"></button>
-                    <button type="button" class="icon-shopping-bag">
-                    </button>
+                    <button type="button" class="icon-shopping-bag"></button>
                 </div>
             </header>
+
             <div class="hero__wrapper">
+                <h1 class="title__h1">
+                    Make your dream come true or decorate your home
+                </h1>
                 <div class="hero__content">
-                    <h1 class="title__h1">Make your dream come true or decorate your home</h1>
                     <img src="/src/img/hero_vase.jpg"
                         alt="Handcrafted ceramic vase with smooth curves and subtle glaze sits on a minimalist table in a softly lit modern room, evoking a calm and artistic atmosphere"
-                        class="hero__img">
+                        class="hero__img" />
+                    <button class="btn">shop now</button>
                 </div>
-                <button class="btn">shop now</button>
             </div>
-
-
-
         </div>
     </section>
 
-
-
-
+    <section class="activities">
+        <div class="container">
+            <h2 class="title__h2">create or buy</h2>
+            <div class="activities__wrapper">
+                <div class="activities__item">
+                    <h3 class="title__h3">our store</h3>
+                    <img src="/src/img/activities_shop.jpg" alt="" />
+                    <p class="activities__text">
+                        Welcome to <span>Ceramic Soul</span>, where each piece tells a
+                        story of craftsmanship and creativity. Our handmade ceramics are
+                        thoughtfully designed and carefully crafted, blending traditional
+                        techniques with modern aesthetics. Whether you're looking for a
+                        unique gift or a special addition to your home, our collection
+                        offers timeless pieces that bring warmth and authenticity to any
+                        space.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script type="module" src="/src/js/script.js"></script>
 </body>

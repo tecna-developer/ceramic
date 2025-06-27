@@ -1,0 +1,8 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.activities {
+    margin-block-start: 60px;
+    &__wrapper {
+        margin-block-start: $gap-title;
+    }
+}

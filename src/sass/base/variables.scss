@@ -5,6 +5,22 @@ $ceramic: #c69978;
 $ui-disabled: #d2d2d2;
 $ui-error: #db0c35;
 $shadow: rgba(0, 0, 0, 0.25) 5px 5px 10px 0;
+$gap-section: 60px;
+$gap-title:20px;
+
+@media screen and (min-width: 768px) {
+  $gap-title: 40px;
+  
+}
+@media screen and (min-width: 1200px) {
+  $gap-title: 80px;
+
+}
+
+@media screen and (min-width: 1920px) {
+  $gap-section: 100px;
+
+}
 
  
 

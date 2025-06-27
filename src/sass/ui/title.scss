@@ -12,3 +12,21 @@
     width: 330px;
     
 }
+
+.title__h2 {
+    @include title;
+    font-size: clamp(32px, 1vw + .5rem, 40px);
+    font-weight: 500;
+    color: $dark;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.title__h3 {
+    @include title;
+    font-size: clamp(20px, 1vw + .5rem, 24px);
+    font-weight: 500;
+    color: $dark;
+    text-align: center;
+    text-transform: uppercase;
+}

@@ -1,6 +1,7 @@
 @use "/src/sass/base/variables.scss" as *;
 .hero {
     padding-top: 50px;
+   
     &__wrapper {
         display: flex;
         flex-direction: column;
@@ -21,5 +22,40 @@
         box-shadow:$shadow;
     
     }
+    #potter {
+        display: none;
+    }
 
+}
+@media screen and (min-width: 768px) {
+    .hero {
+        &__wrapper {
+            margin-top: 50px;
+            flex-direction: row;
+            align-items: center;
+            
+        }
+        h1 {
+            transform: translateY(90px);
+        } 
+       
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero {
+        height: 100vh;
+        position: relative;
+        #potter {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 450px;
+            height: 100%;
+            padding-right: 13px;
+           
+        }
+    }
+    
 }
