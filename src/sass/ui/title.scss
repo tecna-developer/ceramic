@@ -1,0 +1,14 @@
+@use "/src/sass/base/variables.scss" as *;
+@use "/src/sass/base/mixin.scss" as *;
+
+.title__h1{
+    @include title;
+    font-size: clamp(24px, 1vw + .5rem, 32px);
+    text-align: center;
+    text-transform: uppercase;
+    font-style: italic;
+    margin-block-start: 50px;
+    margin-inline: 5px;
+    width: 330px;
+    
+}

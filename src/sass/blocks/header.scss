@@ -2,7 +2,6 @@
 
 .header {
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
   justify-content: center;
   color: $dark;
@@ -23,21 +22,25 @@
   }
 }
 
+/* Logo */
 .logo {
   width: 100px;
   height: 100px;
 }
-.icon-shopping-bag ::before {
+
+/* Icons */
+.icon-shopping-bag {
     color: $dark;
     width: 20px;
     height: 20px;	
 }
-.icon-search-outline::before {
+.icon-search-outline {
   color: $dark;
   width: 20px;
   height: 20px;
 }
 
+/* Navigation */
 .nav {
   display: none;
   width: fit-content;
