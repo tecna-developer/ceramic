@@ -1,8 +1,26 @@
 @use "/src/sass/base/variables.scss" as *;
 
 .activities {
-    margin-block-start: 60px;
+    padding-top: 60px;
     &__wrapper {
-        margin-block-start: $gap-title;
+        padding-top: $gap-title;
+        row-gap: 40px;
+    }
+    &__title {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    &__text {
+        padding-block-start: 20px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: normal;
+        color: $dark;
+        text-wrap-style: balance;
+        &-colored {
+            color: $ceramic;
+            font-weight: 500;
+            font-style: italic;
+        }
     }
 }
