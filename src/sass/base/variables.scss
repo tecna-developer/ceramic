@@ -6,7 +6,6 @@ $ui-disabled: #d2d2d2;
 $ui-error: #db0c35;
 $shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);
 $gap-section: 60px;
-$gap-title:20px;
 
 @media screen and (min-width: 768px) {
   $gap-title: 40px;
@@ -80,7 +79,6 @@ html {
 }
 
 .container {
-  
   max-inline-size: 100%;
   margin-inline: auto;
   padding-inline: .625rem;
