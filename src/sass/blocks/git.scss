@@ -1,0 +1,32 @@
+.git {
+    padding-top: 60px;
+    &__title {
+        margin-block-end: 60px;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding: 0 10px;
+    }
+    &__permission {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+
+    
+}
+
+@media screen and (min-width:1200px) {
+    .git {
+        #git-img {
+            background: url('/src/img/tea.jpg') center center/cover no-repeat;
+            width: 550px;
+            height: 340px;
+    
+        }
+
+    }  
+}
