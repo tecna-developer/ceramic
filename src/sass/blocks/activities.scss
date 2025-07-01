@@ -5,22 +5,66 @@
     &__wrapper {
         padding-top: $gap-title;
         row-gap: 40px;
+        // align-items: center;
+        // justify-content: center;
     }
     &__title {
         text-align: center;
         margin-bottom: 40px;
     }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 20px;
+    }
+    &__img {
+        width: 100%;;
+        object-fit: cover;
+        box-shadow: $shadow;
+    }
+    // #workshop {
+    //     height: 128px;
+    // }
     &__text {
         padding-block-start: 20px;
         font-size: 16px;
         font-weight: 400;
         line-height: normal;
         color: $dark;
-        text-wrap-style: balance;
+        text-wrap-style: pretty;
+        // width: 340px;
         &-colored {
             color: $ceramic;
             font-weight: 500;
             font-style: italic;
+        }
+    }
+}
+@media screen and (min-width:768px) {
+    .activities {
+        padding: 60px 95px 0 95px;
+        &__content {
+            column-gap: 25px;
+        }
+
+    }
+} 
+    
+
+
+@media screen and (min-width: 1280px) {
+    .activities {
+        &__wrapper {
+            row-gap: 0;
+            column-gap: 20px;
+        }
+        &__content {
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: center;
+            column-gap: 20px;
         }
     }
 }
