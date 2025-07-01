@@ -24,9 +24,7 @@
         object-fit: cover;
         box-shadow: $shadow;
     }
-    // #workshop {
-    //     height: 128px;
-    // }
+    
     &__text {
         padding-block-start: 20px;
         font-size: 16px;
@@ -34,7 +32,6 @@
         line-height: normal;
         color: $dark;
         text-wrap-style: pretty;
-        // width: 340px;
         &-colored {
             color: $ceramic;
             font-weight: 500;
@@ -47,6 +44,9 @@
         padding: 60px 95px 0 95px;
         &__content {
             column-gap: 25px;
+        }
+        &__text {
+            font-size: 20px;
         }
 
     }
