@@ -1,31 +1,107 @@
+@use "/src/sass/base/variables.scss" as *;
 .git {
     padding-top: 60px;
-    &__title {
-        margin-block-end: 60px;
+    &__wrapper {
+        margin-block-start: 60px;
     }
-    &__form {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        padding: 0 10px;
+    &__img {
+        display: none;
+    }
+
+    &__fieldset {
+        margin: 0 0 8px 0;
+        border: none;
+        padding: 0;
+    }
+    &__label {
+        display: block;
+    }
+    &__input {
+        width: 100%;
+        height: 48px;
+        padding: 10px 15px;
+        border: 1px solid #E2E1E5;
+        border-radius: 2px;
+        background-color: #FFFFFF;
+        color:$dark;
+        transition: all .3s ease-in-out;
+        &:focus {
+            outline:1px solid $dark;
+        }
+        &::placeholder {
+            color: $ui-disabled;
+            font-size: 14px;
+            line-height: 200%;
+        }
+        
+    }
+    &__textarea {
+        width: 100%;
+        height: 132px;
+        padding: 10px 15px;
+        resize: none;
+        border: 1px solid #E2E1E5;
+        border-radius: 2px;
+        background-color: #FFFFFF;
+        transition: all .3s ease-in-out;
+        &:focus {
+            outline:1px solid $dark;
+        }
+        &::placeholder {
+            color: $ui-disabled;
+            font-size: 14px;
+            line-height: 2;
+        }
     }
     &__permission {
         display: flex;
         align-items: center;
         gap: 10px;
+        padding: 20px 0;
+        &_link {
+            color: #A22DC6;
+            text-decoration: none;
+            font-size: 14px;
+            line-height: 2;
+        }
+    }  
+}
+
+@media screen and (min-width:768px) {
+    .git {
+        &__wrapper {
+            margin-block-start: 45px;
+        }
+        &__form {
+            padding: 0 10px;
+        }
+        &__fieldset-item {
+            width: 300px;
+        }
+        &__textarea {
+            width: 300px;
+        }
     }
 
-
-    
 }
 
 @media screen and (min-width:1200px) {
     .git {
-        #git-img {
-            background: url('/src/img/tea.jpg') center center/cover no-repeat;
+        &__img {
+           display: block;
             width: 550px;
             height: 340px;
-    
+            box-shadow: $shadow;
+            margin-right: 75px;
+        }
+        &__form {
+            padding: 0 75px;
+        }
+        &__input {
+            &:hover {
+                border: none;
+                outline: 1px solid $dark;
+            }
         }
 
     }  
