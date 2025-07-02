@@ -15,6 +15,9 @@
     }
     &__label {
         display: block;
+        color: $dark;
+        font-size: 14px;
+        line-height: 2;
     }
     &__input {
         width: 100%;
@@ -64,6 +67,21 @@
             font-size: 14px;
             line-height: 2;
         }
+    }
+    &__checkbox {
+        width: 15px;
+        height: 15px;
+        border: 1px solid $dark;
+        border-radius: 2px;
+        background-color: #FFFFFF;
+        transition: all .3s ease-in-out;
+        &:checked {
+            background-color: #5E5BFF;
+            border-color: $dark;
+        }
+    }
+    &__img-vase {
+        display: none;
     }  
 }
 
@@ -73,13 +91,25 @@
             margin-block-start: 45px;
         }
         &__form {
-            padding: 0 10px;
+            &-wrapper {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+            }
         }
         &__fieldset-item {
             width: 300px;
         }
         &__textarea {
             width: 300px;
+        }
+        &__img-vase {
+            display: block;
+            width: 85px;
+            height: 85px;
+            align-self: flex-end;
+
         }
     }
 
@@ -92,11 +122,13 @@
             width: 550px;
             height: 340px;
             box-shadow: $shadow;
-            margin-right: 75px;
+            margin-right: 20px;
+           
         }
         &__form {
-            padding: 0 75px;
+            padding: 0 0 0 20px;
         }
+        
         &__input {
             &:hover {
                 border: none;
@@ -105,4 +137,18 @@
         }
 
     }  
+}
+
+@media screen and (min-width:1920px) {
+    .git {
+        &__img {
+            width: 573px;
+            height: 356px;
+            margin-right: 75px;
+        }
+        &__form {
+            padding: 0 75px;
+        }
+    }
+
 }
