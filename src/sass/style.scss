@@ -8,6 +8,10 @@
 @use "/src/sass/base/mixin.scss";
 
 
+@use "/src/sass/ui/button-default.scss";
+@use "/src/sass/ui/title.scss";
+@use "/src/sass/ui/button-form.scss";
+
 @use "/src/sass/blocks/hero.scss";
 @use "/src/sass/blocks/header.scss";
 @use "/src/sass/blocks/burger.scss";
@@ -15,8 +19,6 @@
 @use "/src/sass/blocks/git.scss";
 @use "/src/sass/blocks/works.scss";
 
-@use "/src/sass/ui/button-default.scss";
-@use "/src/sass/ui/title.scss";
-@use "/src/sass/ui/button-form.scss";
+
 
 

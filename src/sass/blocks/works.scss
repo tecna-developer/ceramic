@@ -2,7 +2,11 @@
 
 .works {
     padding-top: 60px;
+    &__title {
+        font-size: 30px;
+    }
     &__wrapper {
         margin-block-start: 40px;
+        
     }    
 }
