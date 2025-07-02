@@ -1,0 +1,8 @@
+@use '/src/sass/base/variables.scss' as *;
+
+.works {
+    padding-top: 60px;
+    &__wrapper {
+        margin-block-start: 40px;
+    }    
+}
