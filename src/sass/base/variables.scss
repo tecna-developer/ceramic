@@ -64,6 +64,14 @@ html {
   color-scheme: light dark;
   color: $dark;
   background-color: $light;
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  &::selection {
+    background-color: $ceramic;
+    color: $dark;
+  }
   
 }
 

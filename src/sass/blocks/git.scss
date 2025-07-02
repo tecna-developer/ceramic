@@ -59,13 +59,12 @@
     &__permission {
         display: flex;
         align-items: center;
-        gap: 10px;
         padding: 20px 0;
-        &_link {
+        a {
             color: #A22DC6;
             text-decoration: none;
-            font-size: 14px;
-            line-height: 2;
+            margin-left: 4px;
+            
         }
     }
     &__checkbox {
@@ -74,6 +73,7 @@
         border: 1px solid $dark;
         border-radius: 2px;
         background-color: #FFFFFF;
+        margin-right: 15px;
         transition: all .3s ease-in-out;
         &:checked {
             background-color: #5E5BFF;
@@ -117,6 +117,9 @@
 
 @media screen and (min-width:1200px) {
     .git {
+        &__wrapper {
+            margin-block-start: 80px;
+        }
         &__img {
            display: block;
             width: 550px;
@@ -152,3 +155,4 @@
     }
 
 }
+

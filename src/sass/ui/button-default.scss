@@ -1,6 +1,8 @@
 @use "/src/sass/base/variables.scss" as *;
+@use "/src/sass/base/mixin.scss" as *;
 
 .btn {
+    @include button;
     border: 1px solid $dark;
     background-color: transparent;
     color: $dark;
@@ -9,12 +11,12 @@
     font-size: 20px;
     font-weight: 400;
     padding: 18px;
-    text-transform: uppercase;
-    
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     transition: all 0.3s;
     &:hover {
         background-color:$dark;
         color: $light;
+        border-radius:2px;
     }
     
 }
@@ -24,6 +26,7 @@
             background-color: transparent;
             color: $dark;
             box-shadow:  inset 0 0 10px 1px rgba(0, 0, 0, 0.4);
+            border-radius:2px;
     
         };
     }

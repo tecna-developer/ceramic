@@ -7,14 +7,14 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 20px;
+        row-gap: 20px;
     }
     &__content {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 40px;
+        row-gap: 40px;
     }
     &__img {
         max-width: 100%;
@@ -32,29 +32,39 @@
         &__wrapper {
             margin-top: 50px;
             flex-direction: row;
+            justify-content: right;
+            column-gap: 90px;
             align-items: center;
             
         }
-        h1 {
-            transform: translateY(90px);
-        } 
+        &__img {
+            width: 230px;
+			height: 321px;
+        }
+        &__title {
+            transform: translateY(60px);
+            text-align: left;
+        }
+        
        
     }
 }
 
 @media screen and (min-width: 1200px) {
     .hero {
-        position: relative;
         #potter {
             display: block;
             position: absolute;
             top: 0;
             left: 0;
-            width: 450px;
-            height: 100%;
-            padding-right: 13px;
-           
+            width: clamp(450px, 37.5vw, 640px);
+            height: 633px;
+            object-fit: cover;
+            padding-inline-end: 13px; 
+        }
+        &__wrapper {
+            column-gap: 8px;
+
         }
     }
-    
 }

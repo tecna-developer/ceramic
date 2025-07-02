@@ -19,7 +19,7 @@
 
 <body>
     <section class="hero">
-        <!-- <img id="potter" src="/src/img/potter.jpg" alt="potter" /> -->
+        <img id="potter" src="/src/img/potter.jpg" alt="potter" />
         <div class="container">
             <div class="burger__menu">
                 <button class="burger__close"><span></span><span></span></button>
@@ -53,14 +53,14 @@
             </header>
 
             <div class="hero__wrapper">
-                <h1 class="title__h1">
+                <h1 class="title__h1 hero__title">
                     Make your dream come true or decorate your home
                 </h1>
                 <div class="hero__content">
                     <img src="/src/img/hero_vase.jpg"
                         alt="Handcrafted ceramic vase with smooth curves and subtle glaze sits on a minimalist table in a softly lit modern room, evoking a calm and artistic atmosphere"
                         class="hero__img" />
-                    <button class="btn">shop now</button>
+                    <button class="btn hero__btn">shop now</button>
                 </div>
             </div>
         </div>
@@ -115,21 +115,22 @@
                         <fieldset class="git__fieldset">
                             <div class="git__fieldset-item">
                                 <label class="git__label" for="name">Name</label>
-                                <input class="git__input" type="text" name="name" id="name" placeholder="Name">
+                                <input class="git__input" type="text" name="name" id="name" placeholder="Name" required>
                             </div>
                             <div class="git__fieldset-item">
                                 <label class="git__label" for="question">Email</label>
-                                <input class="git__input" type="email" name="email" id="email" placeholder="Email">
+                                <input class="git__input" type="email" name="email" id="email" placeholder="Email"
+                                    required>
                             </div>
                         </fieldset>
                         <label class="git__label" for="question">Your question</label>
                         <textarea class="git__textarea" name="question" id="question" cols="30" rows="10"
-                            placeholder="Question"></textarea>
-                        <div class="git__permission">
-                            <input class="git__checkbox" type="checkbox" name="agree" id="">I agree with the<a href="#"
-                                class="git__permission_link">terms</a>
-                        </div>
-                        <button type="submit" class="btn-form">send request</button>
+                            placeholder="Question" required></textarea>
+                        <label class="git__label git__permission" for="agree">
+                            <input class="git__checkbox" type="checkbox" name="agree" id="agree" required>
+                            I agree with the <a href="#">terms</a>
+                        </label>
+                        <button type="submit" class="btn-send">send request</button>
                     </form>
                     <img src="/src/img/vase.svg" alt="vase" class="git__img-vase">
                 </div>
