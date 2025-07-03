@@ -12,7 +12,7 @@
     text-align: center;
     margin-bottom: 40px;
   }
-  
+
   &__img {
     width: 100%;
     object-fit: cover;
@@ -31,7 +31,6 @@
       font-weight: 500;
       font-style: italic;
     }
-    
   }
 }
 @media screen and (min-width: 768px) {
@@ -53,7 +52,7 @@
     &__wrapper {
       margin-top: 60px;
     }
-    
+
     &__item {
       padding: 0 10px;
     }
@@ -61,10 +60,10 @@
       margin-block-end: 60px;
     }
     &__text {
-        margin-block-start: 30px;
-        &_fixed {
-            inline-size: 556px;
-        }
+      margin-block-start: 30px;
+      &_fixed {
+        inline-size: 556px;
+      }
     }
   }
 }

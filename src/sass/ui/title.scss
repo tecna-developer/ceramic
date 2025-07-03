@@ -1,54 +1,51 @@
 @use "/src/sass/base/variables.scss" as *;
 @use "/src/sass/base/mixin.scss" as *;
 
-.title__h1{
-    @include title;
-    font-size: clamp(24px, 1vw + .5rem, 32px);
-    text-align: center;
-    text-transform: uppercase;
-    font-style: italic;
-    margin-block-start: 50px;
-    margin-inline: 5px;
-    width: 330px;
-    
+.title__h1 {
+  @include title;
+  font-size: clamp(24px, 1vw + 0.5rem, 32px);
+  text-align: center;
+  text-transform: uppercase;
+  font-style: italic;
+  margin-block-start: 50px;
+  margin-inline: 5px;
+  width: 330px;
 }
 
 .title__h2 {
-    @include title;
-    font-size: 32px;
-    font-weight: 500;
-    color: $dark;
-    text-align: center;
-    text-transform: uppercase;
+  @include title;
+  font-size: 32px;
+  font-weight: 500;
+  color: $dark;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-
 .title__h3 {
-    @include title;
-    font-size: 20px;
-    font-weight: 500;
-    color: $dark;
-    text-align: center;
-    text-transform: uppercase;
+  @include title;
+  font-size: 20px;
+  font-weight: 500;
+  color: $dark;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 @media screen and (min-width: 768px) {
-    .title__h2 {
-        font-size: 36px;
-    }
-    .title__h3 {
-        font-size: 24px;
-    }
-    
+  .title__h2 {
+    font-size: 36px;
+  }
+  .title__h3 {
+    font-size: 24px;
+  }
 }
 @media screen and (min-width: 1200px) {
-    .title__h2 {
-        font-size: 36px;
-    }
+  .title__h2 {
+    font-size: 36px;
+  }
 }
 
 @media screen and (min-width: 1920px) {
-    .title__h2 {
-        font-size: 40px;
-    }
+  .title__h2 {
+    font-size: 40px;
+  }
 }

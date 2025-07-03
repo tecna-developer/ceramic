@@ -1,12 +1,36 @@
-@use '/src/sass/base/variables.scss' as *;
+@use "/src/sass/base/variables.scss" as *;
 
 .works {
-    padding-top: 60px;
-    &__title {
-        font-size: 30px;
+  padding-top: 60px;
+  padding-bottom: 100px;
+  &__title {
+    font-size: 30px;
+  }
+  &__slider {
+    margin-block-start: 40px;
+  }
+  /* fix 100% width for images */
+  .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  /* Hide arrows on mobile */
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+  .swiper-pagination-bullet {
+    background-color: $dark;
+    border-radius: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .works {
+    .swiper-button-prev,
+    .swiper-button-next {
+      display: block;
     }
-    &__wrapper {
-        margin-block-start: 40px;
-        
-    }    
+  }
 }

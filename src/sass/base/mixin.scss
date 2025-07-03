@@ -1,28 +1,25 @@
 @use "/src/sass/base/variables.scss" as *;
 
-
-
 // Mixin for title styles
 @mixin title {
-    color: $dark;
-    font-weight: 500;
-    line-height: normal;   
+  color: $dark;
+  font-weight: 500;
+  line-height: normal;
 }
 
 // Mixin for button styles
 @mixin button {
-    width: 220px;
-    min-height: 40px;
-    padding: 10px 15px;
-    border: 1px solid $dark;
-    font-size: 16px;
-    text-transform: uppercase;
-    display: flex;
-    place-content: center;
-    border-radius: 5px;
-    background-color: #ffffff;
-    color: $dark;
-    transition: all .3s ease-in-out;
-    cursor: pointer;
-    
+  width: 220px;
+  min-height: 40px;
+  padding: 10px 15px;
+  border: 1px solid $dark;
+  font-size: 16px;
+  text-transform: uppercase;
+  display: flex;
+  place-content: center;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: $dark;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }

@@ -1,31 +1,29 @@
-@use '/src/sass/base/variables.scss' as *;
-@use '/src/sass/base/mixin.scss' as *;
+@use "/src/sass/base/variables.scss" as *;
+@use "/src/sass/base/mixin.scss" as *;
 
 .btn-send {
-    @include button;
-    &:focus {
-        outline: 1px solid $ceramic;
-        border: 1px solid $ceramic;
-        color: $dark;
-    }
-    &:disabled {
-        color: $ui-disabled;
-        border: 1px solid $ui-disabled;
-    }
+  @include button;
+  &:focus {
+    outline: 1px solid $ceramic;
+    border: 1px solid $ceramic;
+    color: $dark;
+  }
+  &:disabled {
+    color: $ui-disabled;
+    border: 1px solid $ui-disabled;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-    .btn-send {
-        &:active {
-            outline: 1px solid $ceramic;
-            border: none;
-            color: $dark;
-        }
-        &:hover  {
-            border: 1px solid $ceramic;;
-            color: $ceramic;
-        }
-    }   
+  .btn-send {
+    &:active {
+      outline: 1px solid $ceramic;
+      border: none;
+      color: $dark;
+    }
+    &:hover {
+      border: 1px solid $ceramic;
+      color: $ceramic;
+    }
+  }
 }
-
-

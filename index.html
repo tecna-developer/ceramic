@@ -76,27 +76,28 @@
                     <img class="activities__img" srcset="/src/img/activities_shop.jpg" alt="shop"
                         src="/src/img/store-768.jpg" />
                     <p class="activities__text">
-                        Welcome to <span class="activities__text_colored">Ceramic Soul</span>, where each piece
-                        tells a
-                        story of craftsmanship and creativity. Our handmade ceramics are
-                        thoughtfully designed and carefully crafted, blending traditional
-                        techniques with modern aesthetics. Whether you're looking for a
-                        unique gift or a special addition to your home, our collection
-                        offers timeless pieces that bring warmth and authenticity to any
-                        space.
+                        Welcome to
+                        <span class="activities__text_colored">Ceramic Soul</span>, where
+                        each piece tells a story of craftsmanship and creativity. Our
+                        handmade ceramics are thoughtfully designed and carefully crafted,
+                        blending traditional techniques with modern aesthetics. Whether
+                        you're looking for a unique gift or a special addition to your
+                        home, our collection offers timeless pieces that bring warmth and
+                        authenticity to any space.
                     </p>
-
                 </div>
                 <div class="pure-u-1 pure-u-xl-3-5 activities__item">
                     <h3 class="title__h3 activities__title">our workshop</h3>
                     <img id="workshop" class="activities__img" srcset="/src/img/workshop.jpg" alt="workshop" />
 
                     <p class="activities__text activities__text_fixed">
-                        At <span class="activities__text_colored">Ceramic Soul</span> workshop, we don’t just craft
-                        ceramics—we invite you to get hands-on and create your own unique pieces.
-                        Through our engaging masterclasses, you’ll learn traditional techniques, work with natural
-                        materials, and experience the
-                        joy of shaping clay into something truly personal.
+                        At
+                        <span class="activities__text_colored">Ceramic Soul</span>
+                        workshop, we don’t just craft ceramics—we invite you to get
+                        hands-on and create your own unique pieces. Through our engaging
+                        masterclasses, you’ll learn traditional techniques, work with
+                        natural materials, and experience the joy of shaping clay into
+                        something truly personal.
                     </p>
                 </div>
             </div>
@@ -108,31 +109,32 @@
             <h2 class="title__h2">get in touch</h2>
             <div class="pure-g git__wrapper">
                 <div class="pure-u-1 pure-u-xl-1-2 pure-u-xxl-2-5">
-                    <img src="/src/img/tea.jpg" alt="tea" class="git__img">
+                    <img src="/src/img/tea.jpg" alt="tea" class="git__img" />
                 </div>
                 <div class="pure-u-1 pure-u-xl-1-2 pure-u-xxl-3-5 git__form-wrapper">
                     <form action="" method="get" class="git__form">
                         <fieldset class="git__fieldset">
                             <div class="git__fieldset-item">
                                 <label class="git__label" for="name">Name</label>
-                                <input class="git__input" type="text" name="name" id="name" placeholder="Name" required>
+                                <input class="git__input" type="text" name="name" id="name" placeholder="Name"
+                                    required />
                             </div>
                             <div class="git__fieldset-item">
                                 <label class="git__label" for="question">Email</label>
                                 <input class="git__input" type="email" name="email" id="email" placeholder="Email"
-                                    required>
+                                    required />
                             </div>
                         </fieldset>
                         <label class="git__label" for="question">Your question</label>
                         <textarea class="git__textarea" name="question" id="question" cols="30" rows="10"
                             placeholder="Question" required></textarea>
                         <label class="git__label git__permission" for="agree">
-                            <input class="git__checkbox" type="checkbox" name="agree" id="agree" required>
+                            <input class="git__checkbox" type="checkbox" name="agree" id="agree" required />
                             I agree with the <a href="#">terms</a>
                         </label>
                         <button type="submit" class="btn-send">send request</button>
                     </form>
-                    <img src="/src/img/vase.svg" alt="vase" class="git__img-vase">
+                    <img src="/src/img/vase.svg" alt="vase" class="git__img-vase" />
                 </div>
             </div>
         </div>
@@ -141,10 +143,24 @@
     <section class="works">
         <div class="container">
             <h2 class="title__h2 works__title">check out our works</h2>
-            <div class="works__wrapper">
 
+            <div class="swiper works__slider">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="/src/img/slide1.jpg" alt="tea"></div>
+                    <div class="swiper-slide"><img src="/src/img/slide2.jpg" alt="tea"></div>
+                    <div class="swiper-slide"><img src="/src/img/slide3.jpg" alt="tea"></div>
+                    <div class="swiper-slide"><img src="/src/img/slide2.jpg" alt="tea"></div>
+
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
-        </div>
     </section>
 
     <script type="module" src="/src/js/script.js"></script>
