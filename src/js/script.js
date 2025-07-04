@@ -30,20 +30,20 @@ try {
       clickable: true,
     },
     navigation: {
-      prevEl: ".swiper-button-prev",
-      nextEl: ".swiper-button-next",
+      prevEl: ".icon-left-open",
+      nextEl: ".icon-right-open",
     },
     breakpoints: {
       // when window width is >= 1200px
       1200: {
         slidesPerView: 3,
         spaceBetween: 5,
-        mousewheel: true,
         keyboard: true,
       },
       // when window width is >= 1920px
       1920: {
         spaceBetween: 35,
+        slidesPerView: 3,
       },
     },
 

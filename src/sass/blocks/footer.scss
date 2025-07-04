@@ -1,0 +1,8 @@
+@use "/src/sass/base/variables.scss" as *;
+
+footer {
+  margin-top: 100px;
+  background-color: $dark;
+  padding-top: 60px;
+  height: 50px;
+}
