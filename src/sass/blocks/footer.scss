@@ -1,8 +1,86 @@
 @use "/src/sass/base/variables.scss" as *;
 
-footer {
-  margin-top: 100px;
+.footer {
   background-color: $dark;
-  padding-top: 60px;
-  height: 50px;
+  padding: 50px 0;
+  color: $light;
+  &__item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  &__input {
+    min-height: 32px;
+    padding: 5px 5px 15px 5px;
+    border: none;
+    border-bottom: 1px solid $light;
+    background-color: transparent;
+    background-color: $dark;
+    color: $light;
+    &::placeholder {
+      color: $ui-active;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+  &__checkbox {
+    color: $light;
+  }
+  &__nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 66px;
+    margin: 40px 0;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    li {
+      list-style: none;
+      &:first-child {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  &__link {
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 400;
+    color: $light;
+    text-decoration: none;
+  }
+  &__text {
+    font-size: 16px;
+    font-weight: 400;
+    color: $light;
+  }
+  &__social {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    a {
+      font-size: 24px;
+      display: inline-block;
+      &::before {
+        margin: 0;
+      }
+      &:focus {
+        color: $ceramic;
+      }
+    }
+  }
+}
+
+.copyright {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 40px;
 }
