@@ -112,6 +112,7 @@
       grid-template-columns: 1fr max-content 1fr;
       grid-template-rows: auto;
       row-gap: 0;
+      column-gap: 50px;
     }
     &__item {
       &:first-child {
