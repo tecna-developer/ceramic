@@ -50,3 +50,27 @@ try {
     modules: [Navigation, Pagination],
   });
 } catch (error) {}
+
+// Функционал для переключения табов в каталоге
+try {
+  const tabs = document.querySelectorAll(".catalog__tab");
+  const items = document.querySelectorAll(".catalog__content-item");
+
+  tabs.forEach((tab, index) => {
+    tab.addEventListener("click", () => {
+      // Снимаем активный класс со всех табов
+      tabs.forEach((t) => t.classList.remove("catalog__tab_active"));
+      // Добавляем активный класс выбранному табу
+      tab.classList.add("catalog__tab_active");
+
+      // Показываем только соответствующий контент
+      items.forEach((item, i) => {
+        item.style.display = i === index ? "flex" : "none";
+      });
+    });
+  });
+  // Инициализация: показываем только первый контент
+  items.forEach((item, i) => {
+    item.style.display = i === 0 ? "flex" : "none";
+  });
+} catch (error) {}
