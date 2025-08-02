@@ -12,7 +12,7 @@
     column-gap: 50px;
     row-gap: 13px;
     border: 1px solid $dark;
-    padding: 13px 35px;
+    padding: 13px 25px;
   }
   &__tab {
     position: relative;
@@ -34,12 +34,68 @@
     }
   }
   &__content {
-    margin-top: 60px;
     &-item {
+      margin-top: 60px;
       display: none;
       flex-direction: column;
       flex-wrap: wrap;
       gap: 20px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .catalog {
+    &__tabs {
+      width: max-content;
+    }
+    &__content {
+      &-item {
+        padding: 10px;
+        flex-direction: row;
+        position: relative;
+        &::after,
+        &::before {
+          content: "";
+          display: block;
+          width: 200px;
+          height: 1px;
+          background-color: $dark;
+          top: 0px;
+          left: 0px;
+          position: absolute;
+        }
+        &::after {
+          width: 1px;
+          height: 200px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .catalog {
+    &__content {
+      &-item {
+        padding: 25px;
+        gap: 35px;
+        &::after,
+        &::before {
+          top: 0px;
+          left: 0px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1920px) {
+  .catalog {
+    &__content {
+      &-item {
+        column-gap: 83px;
+        row-gap: 25px;
+      }
     }
   }
 }
