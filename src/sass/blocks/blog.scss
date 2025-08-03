@@ -1,0 +1,8 @@
+@use "/src/sass/base/variables.scss" as *;
+@use "/src/sass/base/mixin.scss" as *;
+
+.blog {
+  &__title {
+    margin-top: 60px;
+  }
+}

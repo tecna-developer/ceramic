@@ -23,3 +23,24 @@
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
+
+@mixin angle-decoration {
+  position: relative;
+  &::after,
+  &::before {
+    content: "";
+    display: block;
+    background-color: $dark;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+  }
+  &::before {
+    width: 200px;
+    height: 1px;
+  }
+  &::after {
+    width: 1px;
+    height: 200px;
+  }
+}
