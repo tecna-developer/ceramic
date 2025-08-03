@@ -5,4 +5,38 @@
   &__title {
     margin-top: 60px;
   }
+  &__wrapper {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  &__card {
+    box-shadow: $shadow;
+    border: $border;
+    &__img {
+      max-inline-size: calc(100% + 2px);
+      height: calc(100% + 1px);
+      object-fit: cover;
+      transform: translateX(-2px) translateY(-1px);
+    }
+  }
+  &__top {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: flex-start;
+    padding: 25px 25px 0 25px;
+  }
+  &__text {
+    margin-top: 25px;
+    padding: 0 25px 25px 25px;
+    color: $dark;
+    font-size: 16px;
+    line-height: 1.2;
+  }
 }

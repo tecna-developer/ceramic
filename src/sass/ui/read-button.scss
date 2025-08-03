@@ -1,20 +1,24 @@
 @use "/src/sass/base/variables.scss" as *;
 @use "/src/sass/base/mixin.scss" as *;
 
-.btn-send {
+.btn-read {
   @include button;
+  padding: 8px 20px;
+  font-size: 16px;
+  line-height: 1.2;
+  color: $dark;
+  border: $border;
+  border-radius: 0;
+  min-height: 32px;
+  width: 145px;
   &:focus {
     outline: $border-state;
     border: $border-state;
   }
-  &:disabled {
-    color: $ui-disabled;
-    border: 1px solid $ui-disabled;
-  }
 }
 
 @media screen and (min-width: 1200px) {
-  .btn-send {
+  .btn-read {
     &:active {
       outline: $border-state;
       border: none;
