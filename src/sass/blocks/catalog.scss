@@ -54,6 +54,7 @@
       &-item {
         padding: 10px;
         flex-direction: row;
+        position: relative;
         @include angle-decoration;
       }
     }
@@ -64,7 +65,7 @@
   .catalog {
     &__content {
       &-item {
-        padding: 25px;
+        padding: 25px 0 0 25px;
         gap: 35px;
       }
     }

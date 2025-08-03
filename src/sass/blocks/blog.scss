@@ -12,13 +12,19 @@
     gap: 40px;
   }
   &__card {
+    background-color: $light;
     box-shadow: $shadow;
     border: $border;
+    height: max-content;
     &__img {
       max-inline-size: calc(100% + 2px);
+      background-color: $ceramic;
       height: calc(100% + 1px);
       object-fit: cover;
       transform: translateX(-2px) translateY(-1px);
+    }
+    &__title {
+      text-align: left;
     }
   }
   &__top {
@@ -31,6 +37,7 @@
     row-gap: 20px;
     align-items: flex-start;
     padding: 25px 25px 0 25px;
+    text-align: left;
   }
   &__text {
     margin-top: 25px;
@@ -38,5 +45,59 @@
     color: $dark;
     font-size: 16px;
     line-height: 1.2;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .blog {
+    &__wrapper {
+      padding: 10px;
+      position: relative;
+      @include angle-decoration;
+    }
+    &__card {
+      &__img {
+        width: 335px;
+        height: 240px;
+        transform: translateX(-1px) translateY(-1px);
+      }
+    }
+    &__info {
+      justify-content: space-between;
+      row-gap: 0;
+      transform: translateY(-1px);
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .blog {
+    &__wrapper {
+      padding: 25px 0 0 25px;
+      column-gap: 50px;
+    }
+    &__card {
+      max-width: 520px;
+      &__img {
+        width: 260px;
+        height: 240px;
+        transform: translateX(-1px) translateY(-1px);
+      }
+    }
+    &__top {
+      flex-wrap: nowrap;
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .blog {
+    &__card {
+      max-width: 670px;
+      &__img {
+        width: 335px;
+        height: 240px;
+        transform: translateX(-1px) translateY(-1px);
+      }
+    }
   }
 }

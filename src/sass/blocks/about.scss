@@ -35,6 +35,7 @@
       margin: 0 auto;
       margin-top: 60px;
       overflow: hidden;
+      background-color: $ceramic;
       & iframe {
         width: 100%;
         height: 100%;
@@ -83,6 +84,7 @@
 @media screen and (min-width: 1920px) {
   .about {
     &__img {
+      background-color: $ceramic;
       width: 700px;
       height: 481px;
     }

@@ -26,17 +26,14 @@
 }
 
 @mixin angle-decoration {
-  position: relative;
   &::after,
-  &::before {
+  ::before {
     content: "";
     display: block;
     background-color: $dark;
     top: 0px;
     left: 0px;
     position: absolute;
-  }
-  &::before {
     width: 200px;
     height: 1px;
   }
