@@ -120,18 +120,21 @@
                                     required />
                             </div>
                             <div class="git__fieldset-item">
-                                <label class="git__label" for="question">Email</label>
+                                <label class="git__label" for="email">Email</label>
                                 <input class="git__input" type="email" name="email" id="email" placeholder="Email"
                                     required />
+
                             </div>
                         </fieldset>
                         <label class="git__label" for="question">Your question</label>
                         <textarea class="git__textarea" name="question" id="question" cols="30" rows="10"
                             placeholder="Question" required></textarea>
+                        <span id="error-message"></span>
                         <label class="git__label git__permission" for="agree">
                             <input class="git__checkbox" type="checkbox" name="agree" id="agree" required />
                             I agree with the <a href="#">terms</a>
                         </label>
+                        <span id="checkbox-error-message"></span>
                         <button type="submit" class="btn-send">send request</button>
                     </form>
                     <img src="/src/img/vase.svg" alt="vase" class="git__img-vase" />

@@ -75,3 +75,56 @@ try {
     item.style.display = i === 0 ? "flex" : "none";
   });
 } catch (error) {}
+
+// Валидация формы обратной связи
+
+try {
+  const validator = new JustValidate("form");
+
+  validator
+    .addField("#name", [
+      {
+        rule: "required",
+      },
+      {
+        rule: "minLength",
+        value: 2,
+      },
+    ])
+    .addField("#email", [
+      {
+        rule: "required",
+      },
+      {
+        rule: "email",
+      },
+    ])
+    .addField(
+      "#question",
+      [
+        {
+          rule: "required",
+          errorMessage: "Please enter your question",
+        },
+        {
+          rule: "minLength",
+          value: 5,
+        },
+      ],
+      {
+        errorsContainer: "#error-message",
+      }
+    )
+    .addField(
+      "#agree",
+      [
+        {
+          rule: "required",
+          errorMessage: "Please accept the terms and conditions",
+        },
+      ],
+      {
+        errorsContainer: "#checkbox-error-message",
+      }
+    );
+} catch (error) {}
