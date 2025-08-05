@@ -5,6 +5,13 @@
   margin-top: 50px;
   padding: 50px 0;
   color: $light;
+  .just-validate-error-field {
+    border-bottom: 1px solid $ui-error;
+    outline: transparent;
+    &::placeholder {
+      color: $ui-error;
+    }
+  }
   &__item {
     display: flex;
     flex-direction: column;
@@ -29,7 +36,7 @@
       font-weight: 400;
     }
   }
-  &__checkbox {
+  label {
     color: $light;
   }
   &__nav {

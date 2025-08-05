@@ -85,7 +85,7 @@
                     <img src="/src/img/tea.jpg" alt="tea" class="git__img" />
                 </div>
                 <div class="pure-u-1 pure-u-xl-1-2 pure-u-xxl-3-5 git__form-wrapper">
-                    <form action="" method="get" class="git__form">
+                    <form action="#" method="get" class="git__form">
                         <fieldset class="git__fieldset">
                             <div class="git__fieldset-item">
                                 <label class="git__label" for="name">Name</label>
@@ -93,7 +93,7 @@
                                     required />
                             </div>
                             <div class="git__fieldset-item">
-                                <label class="git__label" for="question">Email</label>
+                                <label class="git__label" for="email">Email</label>
                                 <input class="git__input" type="email" name="email" id="email" placeholder="Email"
                                     required />
                             </div>
@@ -101,9 +101,11 @@
                         <label class="git__label" for="question">Your question</label>
                         <textarea class="git__textarea" name="question" id="question" cols="30" rows="10"
                             placeholder="Question" required></textarea>
+                        <span id="error-message"></span>
                         <label class="git__label git__permission" for="agree">
                             <input class="git__checkbox" type="checkbox" name="agree" id="agree" required />
                             I agree with the <a href="#">terms</a>
+                            <div id="checkbox-error-message"></div>
                         </label>
                         <button type="submit" class="btn-send">send request</button>
                     </form>

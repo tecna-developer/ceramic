@@ -76,7 +76,7 @@ try {
   });
 } catch (error) {}
 
-// Валидация формы обратной связи
+// Валидация формы обратной связи на главной странице
 
 try {
   const validator = new JustValidate("form");
@@ -125,6 +125,40 @@ try {
       ],
       {
         errorsContainer: "#checkbox-error-message",
+      }
+    );
+} catch (error) {}
+
+// Валидация формы обратной связи  в футере
+try {
+  const footerValidator = new JustValidate("#footer-form");
+
+  footerValidator
+    .addField(
+      "#footer-email",
+      [
+        {
+          rule: "required",
+          errorMessage: "Please enter your email",
+        },
+        {
+          rule: "email",
+        },
+      ],
+      {
+        errorsContainer: "#footer-error-message",
+      }
+    )
+    .addField(
+      "#footer-agree",
+      [
+        {
+          rule: "required",
+          errorMessage: "Please accept the terms and conditions",
+        },
+      ],
+      {
+        errorsContainer: "#footer-checkbox-error-message",
       }
     );
 } catch (error) {}
