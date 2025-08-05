@@ -132,13 +132,17 @@
                 <div class="footer__item">
                     <h4 class="footer__title">newsletter</h4>
                     <p class="footer__text">Keep up to date with news and promotions</p>
-                    <form action="" class="footer__form">
-                        <label for="email"></label>
-                        <input type="email" class="footer__input" placeholder="Enter your e-mail" required>
-                        <label class="git__label git__permission footer__checkbox" for="agree">
-                            <input class="git__checkbox" type="checkbox" name="agree" id="agree" required />
+                    <form action="" method="get" class="footer__form" id="footer-form">
+                        <label for="footer-email"></label>
+                        <input type="email" name="footer-email" id="footer-email" class="footer__input"
+                            placeholder="Enter your e-mail" required>
+                        <div id="footer-error-message"></div>
+                        <label class="git__label git__permission footer__checkbox" for="footer-agree">
+                            <input class="git__checkbox" type="checkbox" name="footer-agree" id="footer-agree"
+                                required />
                             I agree with the <a href="#">terms</a>
                         </label>
+                        <div id="footer-checkbox-error-message"></div>
                         <button class="btn submit__btn">submit</button>
                     </form>
                 </div>
