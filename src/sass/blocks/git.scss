@@ -137,6 +137,9 @@
         outline: 1px solid $dark;
       }
     }
+    &__img-vase {
+      animation: float-rotate 3s linear infinite;
+    }
   }
 }
 
