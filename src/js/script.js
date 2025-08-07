@@ -126,7 +126,21 @@ try {
       {
         errorsContainer: "#checkbox-error-message",
       }
-    );
+    )
+    .onSuccess((event) => {
+      const form = event.currentTarget;
+      const formData = new FormData(form);
+
+      fetch("https://httpbin.org/post", {
+        method: "POST",
+        body: formData,
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          console.log("Success", data);
+          form.reset();
+        });
+    });
 } catch (error) {}
 
 // Валидация формы обратной связи  в футере
@@ -160,5 +174,19 @@ try {
       {
         errorsContainer: "#footer-checkbox-error-message",
       }
-    );
+    )
+    .onSuccess((event) => {
+      const form = event.currentTarget;
+      const formData = new FormData(form);
+
+      fetch("https://jsonplaceholder.typicode.com/posts", {
+        method: "POST",
+        body: formData,
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          console.log("Success", data);
+          form.reset();
+        });
+    });
 } catch (error) {}

@@ -12,6 +12,7 @@ export default defineConfig({
         catalog: "catalog.html",
         blog: "blog.html",
         about: "about.html",
+        terms: "terms.html",
       },
     },
   },
