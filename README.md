@@ -20,7 +20,7 @@ Explore textures, light, and motion — a virtual homage to ceramic craft.
 ### Screenshots  
 | Home | Interaction | Detail |
 |------|--------------|--------|
-| ![Home](https://raw.githubusercontent.com/tecna-developer/ceramic/public/hero.jpg) | ![Interaction](https://raw.githubusercontent.com/tecna-developer/ceramic/main/public/gallery.png) | ![Detail](https://raw.githubusercontent.com/tecna-developer/ceramic/main/public/mobile.png) |
+| ![Home](./public/hero.png) | ![Interaction](./public/gallery.png) | ![Detail](./public/mobile.png) |
 
 
 
