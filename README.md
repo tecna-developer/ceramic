@@ -20,9 +20,9 @@ Explore textures, light, and motion — a virtual homage to ceramic craft.
 ### Screenshots  
 | Home | Interaction | Detail |
 |------|--------------|--------|
-| ![Home](https://raw.githubusercontent.com/tecna-developer/ceramic/img/hero_vase.jpg) | ![Interaction](https://raw.githubusercontent.com/tecna-developer/ceramic/main/assets/screenshots/interaction.png) | ![Detail](https://raw.githubusercontent.com/tecna-developer/ceramic/main/assets/screenshots/detail.png) |
+| ![Home](https://raw.githubusercontent.com/tecna-developer/ceramic/public/hero.jpg) | ![Interaction](https://raw.githubusercontent.com/tecna-developer/ceramic/main/public/gallery.png) | ![Detail](https://raw.githubusercontent.com/tecna-developer/ceramic/main/public/mobile.png) |
 
-*(Make sure the images exist under `/assets/screenshots/`; otherwise, replace with your own paths.)*
+
 
 ---
 
