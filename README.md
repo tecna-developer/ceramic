@@ -20,7 +20,7 @@ Explore textures, light, and motion — a virtual homage to ceramic craft.
 ### Screenshots  
 | Home | Interaction | Detail |
 |------|--------------|--------|
-| ![Home](./public/hero.png) | ![Interaction](./public/gallery.png) | ![Detail](./public/mobile.png) |
+| ![Home](./public/hero.jpg) | ![Interaction](./public/gallery.png) | ![Detail](./public/mobile.png) |
 
 
 
